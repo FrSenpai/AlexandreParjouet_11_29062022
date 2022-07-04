@@ -19,11 +19,6 @@ nav {
     margin-left: 7%;
 }
 
-.ctnBanner {
-    width: 100%;
-    margin-top: 70px;
-}
-
 @media screen and (max-width:650px) {
     nav {
         height: 50px;
@@ -35,8 +30,5 @@ nav {
     .navList li {
         font-size: 12px !important;
         margin-left: 7%;
-    }
-    .ctnBanner {
-        margin-top: 15px;
     }
 }

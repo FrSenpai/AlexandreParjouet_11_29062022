@@ -4,8 +4,8 @@ import Banner from './../components/banner/Banner';
 import imgBanner from '../assets/banners/home_banner.png'
 function Home() {
   return (
-    <section className="ctnBanner">
-      <Banner img={imgBanner} alt={"Bannière home page kasa"}></Banner>
+    <section>
+      <Banner media={{img:imgBanner, alt:"Bannière home page kasa"}} text={"Chez vous, partout et ailleurs"}></Banner>
     </section>
   );
 }
