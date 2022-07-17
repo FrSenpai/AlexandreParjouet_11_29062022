@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Home from "./home/Home";
+import Home from "./pages/home/Home";
 import NavBar from './layout/navBar/NavBar';
-import Error from "./error/Error";
+import Error from "./pages/error/Error";
 
 function App() {
   return (

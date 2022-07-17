@@ -1,18 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Accomodation.css'
-interface Media {
-  img:string,
-  alt:string
-}
 interface Props {
-    title:string
+  title:string
 }
 function Accomodation(props:Props) {
   return (
     <section className='ctnAccomodation'>
         <Link className='accomodation' to={"accomodation"}>
-            
+            <h3>{props.title}</h3>
         </Link>
     </section>
   );
