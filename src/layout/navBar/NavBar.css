@@ -18,3 +18,15 @@ nav {
     list-style: none;
     margin-left: 7%;
 }
+
+.logo {
+    margin-top: 0;
+}
+
+.unactive {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+}

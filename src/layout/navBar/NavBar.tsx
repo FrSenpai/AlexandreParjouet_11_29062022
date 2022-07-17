@@ -1,14 +1,22 @@
 import React from 'react';
 import './NavBar.css';
+import '../../App.css';
 import logo from "../../assets/Logo_Kasa.png"
-import { Link } from 'react-router-dom';
+import { Link, NavLink, } from 'react-router-dom';
 function NavBar() {
   return (
     <nav>
-      <img src={logo} alt="Logo Kasa"/>
+      <Link className='primaryColor logo' to={"home"}><img src={logo} alt="Logo Kasa" /></Link>
+      
       <ul className='navList'>
-        <li><Link className='primaryColor active' to="Home">Accueil</Link></li>
-        <li>A Propos</li>
+        <li>
+          <NavLink className={({ isActive }) => isActive ? 'primaryColor active' : 'primaryColor unactive'} to="home">Accueil</NavLink>
+        </li>
+        <li>
+          <NavLink className={({ isActive }) =>
+            isActive ? 'primaryColor active' : 'primaryColor unactive'
+          } to="About">A propos</NavLink>
+        </li>
       </ul>
     </nav>
   );

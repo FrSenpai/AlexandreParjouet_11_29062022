@@ -2,6 +2,8 @@
   width: 90%;
   padding-top: 3%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .primaryColor {
@@ -11,11 +13,6 @@
 .primaryFont {
   font-family: 'Montserrat', sans-serif;
 }
-
-.active {
-  text-decoration: underline;
-}
-
 h1,h2,h3,h4,p,li,span,a {
   font-family: 'Montserrat', sans-serif;
 }
