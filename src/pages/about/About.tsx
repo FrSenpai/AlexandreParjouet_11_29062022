@@ -15,7 +15,7 @@ export function About() {
         <section className="ctnAbout">
             <Banner media={{img:banner, alt:"Bannière page à propos de kasa"}} />  
             {accordionItems.map((item, index) => {
-                return <Accordion title={item.title} description={item.description} key={index}></Accordion>
+                return <Accordion fontSize="large" title={item.title} description={item.description} key={index}></Accordion>
             })}
         </section>
       

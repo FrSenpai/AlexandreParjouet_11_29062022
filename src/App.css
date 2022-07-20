@@ -11,9 +11,10 @@
 }
 
 .primaryFont {
-  font-family: 'Montserrat', sans-serif;;
+  font-family: 'Montserrat', sans-serif;
 }
 h1,h2,h3,h4,p,li,span,a {
   font-family:'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
