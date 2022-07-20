@@ -36,3 +36,17 @@
     position: relative;
     margin: 0px 20px 0px 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .ctnGallery {
+        height: 30vh;
+    }
+    .activeMedia {
+        height: 30vh;
+    }
+    .arrows {
+        width: 15px;
+        height: 20px;
+    }
+}
