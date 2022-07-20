@@ -9,7 +9,8 @@ import { Accordion } from "../../components/accordion/Accordion";
 export function Accomodation() {
     const accomodationId = useParams()
     const accomodation: IAccomodation = getAccomodations(accomodationId)[0]
-
+    if (accomodation === undefined) window.location.href = "/error"
+        
     return (
         <section className="ctnAccomodationItem">
             <Gallery medias={accomodation.pictures}></Gallery>
