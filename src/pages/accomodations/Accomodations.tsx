@@ -8,7 +8,7 @@ function Accomodations(props:any) {
   return (
     <section className="ctnAccomodations">
     {accomodations.map((a: any, index: number) => {
-      return <Accomodation key={index} img={a.cover} title={a.title} />;
+      return <Accomodation id={a.id} key={index} img={a.cover} title={a.title} />;
     })}
   </section>
   );
