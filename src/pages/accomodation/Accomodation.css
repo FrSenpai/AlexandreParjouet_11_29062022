@@ -1,0 +1,162 @@
+.ctnAccomodationItem {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ctnRowContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.ctnTitleAccomodation {}
+
+.ctnTitleAccomodation h2 {
+    color: #FF6060;
+    font-size: 36px;
+    line-height: 142.6%;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ctnTitleAccomodation h3 {
+    color: #FF6060;
+    font-size: 18px;
+    line-height: 142.6%;
+    font-weight: 500;
+    margin-top: 0px;
+
+}
+
+.tagsList {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.tagsList li {
+    padding: 5px 40px 5px 40px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    font-style: normal;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.ctnHostAndNotation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.ctnHostAndNotation h4 {
+    color: #FF6060;
+    font-size: 18px;
+    margin: 0;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.ctnHostAndNotation img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.ctnHostContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctnStars {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.star {
+    list-style: none;
+
+}
+
+.star img {
+    width: 30px;
+    height: 30px;
+}
+
+.ctnAccordionAccomodationItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ctnAccordionAccomodationItem .accordionItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.atEnd {
+    justify-content: flex-end !important;
+}
+
+/* TODO : Responsive */
+@media screen and (max-width: 768px) {
+    .ctnTitleAccomodation h2 {
+        font-size: 18px;
+    }
+
+    .ctnTitleAccomodation h3 {
+        font-size: 14px;
+    }
+
+    .ctnRowContent {
+        flex-direction: column;
+    }
+
+    .ctnHostAndNotation {
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .tagsList li {
+        font-size: 10px;
+    }
+
+    .ctnTitleAccomodation {
+        width: 100%;
+    }
+
+    .ctnAccordionAccomodationItem {
+        flex-direction: column;
+    }
+
+    .atEnd {
+        margin-left: 0px !important;
+        justify-content: center !important;
+    }
+}

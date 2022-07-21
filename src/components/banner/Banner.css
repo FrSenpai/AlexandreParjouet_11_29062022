@@ -1,0 +1,47 @@
+.ctnBanner {
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%
+}
+
+.ctnBanner img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    opacity: 1;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+
+.ctnBanner h2 {
+    font-size: 48px;
+    font-weight: normal;
+    color:white;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    width: 100%;
+    position: relative;
+    margin-top: -4px;
+    top: -100%;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .ctnBanner h2 {
+        font-size: 24px;
+    }
+
+    .ctnBanner {
+        height: 13vh;
+    }
+
+    
+}
