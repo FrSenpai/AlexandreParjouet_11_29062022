@@ -15,9 +15,7 @@
     margin-top: 30px;
 }
 
-.ctnTitleAccomodation {
-    
-}
+.ctnTitleAccomodation {}
 
 .ctnTitleAccomodation h2 {
     color: #FF6060;
@@ -41,7 +39,7 @@
     display: flex;
     flex-direction: row;
     padding: 0;
-
+    flex-wrap: wrap;
 }
 
 .tagsList li {
@@ -54,6 +52,7 @@
     margin-right: 10px;
     font-style: normal;
     list-style: none;
+    margin-bottom: 10px;
 }
 
 .ctnHostAndNotation {
@@ -66,7 +65,7 @@
 .ctnHostAndNotation h4 {
     color: #FF6060;
     font-size: 18px;
-    margin:0;
+    margin: 0;
     text-align: end;
     margin-right: 10px;
 }
@@ -95,7 +94,7 @@
 
 .star {
     list-style: none;
-    
+
 }
 
 .star img {
@@ -126,3 +125,38 @@
 }
 
 /* TODO : Responsive */
+@media screen and (max-width: 768px) {
+    .ctnTitleAccomodation h2 {
+        font-size: 18px;
+    }
+
+    .ctnTitleAccomodation h3 {
+        font-size: 14px;
+    }
+
+    .ctnRowContent {
+        flex-direction: column;
+    }
+
+    .ctnHostAndNotation {
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .tagsList li {
+        font-size: 10px;
+    }
+
+    .ctnTitleAccomodation {
+        width: 100%;
+    }
+
+    .ctnAccordionAccomodationItem {
+        flex-direction: column;
+    }
+
+    .atEnd {
+        margin-left: 0px !important;
+        justify-content: center !important;
+    }
+}

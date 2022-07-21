@@ -10,6 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding:0
 }
 
 .navList li {
@@ -27,6 +28,12 @@ nav {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 320px) {
+    .logo {
+        width: 45%;
+    }
+    .logo img {
+        width: 100%;
+        object-fit: contain;
+    }
 }

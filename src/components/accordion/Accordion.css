@@ -73,3 +73,10 @@
 .fullWidth {
     width: 90% !important;
 }
+
+@media screen and (max-width:450px) {
+    .ctnAccordion {
+        width: 90% !important;
+    }
+    
+}
