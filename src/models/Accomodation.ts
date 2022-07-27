@@ -10,6 +10,6 @@ export interface IAccomodation {
 		    },
 		rating: string,
 		location: string,
-	equipments: string[],
+		equipments: string[],
 		tags: string[]
 }

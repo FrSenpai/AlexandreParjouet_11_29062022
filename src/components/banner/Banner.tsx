@@ -7,7 +7,6 @@ interface Media {
 interface Props {
     media:Media
     text?:string,
-    slider?:boolean
 }
 function Banner(props:Props) {
   return (

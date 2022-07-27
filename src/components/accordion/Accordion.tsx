@@ -7,6 +7,7 @@ interface Props {
     title:string,
     description:string |string[],
     fontSize: "small" | "large",
+    key?:number
 }
 export function Accordion(props:Props) {
     const [isOpen, setOpenState] = useState(false);
@@ -17,7 +18,7 @@ export function Accordion(props:Props) {
             return (
                 <ul className="ctnGear">
                     {props.description.map((item, index) => {
-                        return <li>{item}</li>
+                        return <li key={index}>{item}</li>
                     })}
                 </ul>
             )

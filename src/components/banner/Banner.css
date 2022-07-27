@@ -37,6 +37,7 @@
 @media screen and (max-width: 768px) {
     .ctnBanner h2 {
         font-size: 24px;
+        padding: 0 !important;
     }
 
     .ctnBanner {
